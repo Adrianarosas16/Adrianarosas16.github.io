@@ -1,12 +1,13 @@
+package Parcial1.Tarea4;
+
+import java.util.Scanner;
 
 public class Promedio {
 
-    import java.util.Scanner;
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
 
-        Scanner sn = new Scanner(System.in) {
-           
+        try (Scanner sn = new Scanner(System.in)) {
             System.out.print("Introduzca un numero: ");
             int n=sn.nextInt();
             int i = 1;
@@ -19,7 +20,8 @@ public class Promedio {
             
             System.out.println("El promedio es: "+ num/n);
         }
+        
     
 }
     
-
+}
